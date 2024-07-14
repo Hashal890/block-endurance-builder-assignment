@@ -24,12 +24,19 @@ const MainContent = () => {
     setBarGraphContentData([...barGraphContentData, item]);
   };
 
+  const handleClearBlocks = () => {
+    setBarGraphContentData([]);
+  };
+
   return (
     <DragDropContext onDragEnd={onDragEnd}>
       <Container sx={{ marginTop: 15 }}>
         <div style={{ display: "flex", gap: "10px" }}>
           <LeftSideContent handleItemClick={handleItemClick} />
-          <RightSideContent />
+          <RightSideContent
+            handleClearBlocks={handleClearBlocks}
+            barGraphContentData={barGraphContentData}
+          />
         </div>
       </Container>
     </DragDropContext>
