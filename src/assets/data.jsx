@@ -1,0 +1,47 @@
+export const allWorkoutBlogs = [
+  {
+    id: 1,
+    title: "Warm Up",
+    numberOfSections: 1,
+    lengthInKilometres: 3,
+    percentage: 75,
+  },
+  {
+    id: 2,
+    title: "Active",
+    numberOfSections: 1,
+    lengthInKilometres: 3,
+    percentage: 115,
+  },
+  {
+    id: 3,
+    title: "Cool Down",
+    numberOfSections: 1,
+    lengthInKilometres: 3,
+    percentage: 68,
+  },
+  {
+    id: 4,
+    title: "Two Step Repeats",
+    numberOfSections: 2,
+    lengthInKilometres: [2, 2],
+    percentage: [115, 80],
+    sectionNames: ["Hard", "Easy"],
+  },
+  {
+    id: 5,
+    title: "Ramp Up",
+    numberOfSections: 4,
+    lengthInKilometres: [2, 1, 1, 1],
+    percentage: [77, 80, 83, 87],
+    sectionNames: ["Active 1", "Active 2", "Active 3", "Active 4"],
+  },
+  {
+    id: 6,
+    title: "Ramp Down",
+    numberOfSections: 4,
+    lengthInKilometres: [1, 1, 1, 1],
+    percentage: [125, 120, 115, 110],
+    sectionNames: ["Active 1", "Active 2", "Active 3", "Active 4"],
+  },
+];
